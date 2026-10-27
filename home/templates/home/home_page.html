@@ -1,8 +1,11 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
+
+<img class="hero-image" src="{% static 'images/facade.jpg' %}" alt="Façade du Salon Éclat">
 
 <section class="hero">
     <h1>Bienvenue au Salon Éclat</h1>

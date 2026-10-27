@@ -1,10 +1,13 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block body_class %}template-equipepage{% endblock %}
 
 {% block content %}
 
 <h1>{{ page.title }}</h1>
+
+<img class="page-image" src="{% static 'images/equipe.jpg' %}" alt="L'équipe du Salon Éclat">
 
 <ul class="equipe-list">
     <li>
