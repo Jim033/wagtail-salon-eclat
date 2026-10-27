@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #2c2c2c;
+    background-color: #fdf8f5;
+}
+
+a {
+    color: #a8597b;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+
+.site-header {
+    background-color: #a8597b;
+}
+
+.site-header__inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header__brand {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.site-nav a {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero (accueil) */
+
+.hero h1 {
+    color: #a8597b;
+}
+
+/* Listes prestations / équipe */
+
+.prestations-list,
+.equipe-list {
+    list-style: none;
+    padding: 0;
+}
+
+.prestations-list li,
+.equipe-list li {
+    border-bottom: 1px solid #e7d9d4;
+    padding: 16px 0;
+}
+
+.prestations-list h2,
+.equipe-list h2 {
+    margin: 0 0 6px;
+    color: #a8597b;
+}
+
+.prix {
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+/* Contact */
+
+address {
+    font-style: normal;
+    margin-bottom: 16px;
+}
+
+.horaires {
+    padding-left: 20px;
+}
+
+/* Footer */
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #8a8a8a;
+    font-size: 0.9em;
+}

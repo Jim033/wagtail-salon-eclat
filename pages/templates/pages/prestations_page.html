@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block body_class %}template-prestationspage{% endblock %}
+
+{% block content %}
+
+<h1>{{ page.title }}</h1>
+
+<ul class="prestations-list">
+    <li>
+        <h2>Coupe femme</h2>
+        <p>Diagnostic, coupe personnalisée et brushing inclus.</p>
+        <span class="prix">35 €</span>
+    </li>
+    <li>
+        <h2>Coupe homme</h2>
+        <p>Coupe classique ou tendance, finitions à la tondeuse.</p>
+        <span class="prix">25 €</span>
+    </li>
+    <li>
+        <h2>Coloration</h2>
+        <p>Coloration complète, avec soin ravivant inclus.</p>
+        <span class="prix">60 €</span>
+    </li>
+    <li>
+        <h2>Brushing</h2>
+        <p>Mise en forme et brillance pour une occasion spéciale.</p>
+        <span class="prix">20 €</span>
+    </li>
+</ul>
+
+{% endblock content %}

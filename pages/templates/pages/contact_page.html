@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body_class %}template-contactpage{% endblock %}
+
+{% block content %}
+
+<h1>{{ page.title }}</h1>
+
+<address>
+    12 rue des Lilas<br>
+    33000 Bordeaux
+</address>
+
+<p><strong>Téléphone :</strong> 05 56 00 00 00</p>
+
+<h2>Horaires d'ouverture</h2>
+<ul class="horaires">
+    <li>Mardi — Vendredi : 9h00 – 19h00</li>
+    <li>Samedi : 9h00 – 17h00</li>
+    <li>Dimanche et lundi : fermé</li>
+</ul>
+
+{% endblock content %}
