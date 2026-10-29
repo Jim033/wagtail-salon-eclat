@@ -1,23 +1,58 @@
 {% extends "base.html" %}
-
-{% block body_class %}template-contactpage{% endblock %}
+{% load wagtailimages_tags %}
 
 {% block content %}
 
 <h1>{{ page.title }}</h1>
 
+{% if page.photo %}
+    {% image page.photo width-500 %}
+{% endif %}
+
+<h2>Coordonnées</h2>
+
 <address>
-    12 rue des Lilas<br>
-    33000 Bordeaux
+    {{ page.adresse }}
 </address>
 
-<p><strong>Téléphone :</strong> 05 56 00 00 00</p>
+<p>
+    <strong>Téléphone :</strong>
+    {{ page.telephone }}
+</p>
+
+<p>
+    <strong>Email :</strong>
+    {{ page.email }}
+</p>
 
 <h2>Horaires d'ouverture</h2>
-<ul class="horaires">
-    <li>Mardi — Vendredi : 9h00 – 19h00</li>
-    <li>Samedi : 9h00 – 17h00</li>
-    <li>Dimanche et lundi : fermé</li>
-</ul>
+
+<p>Lundi : {{ page.lundi }}</p>
+<p>Mardi : {{ page.mardi }}</p>
+<p>Mercredi : {{ page.mercredi }}</p>
+<p>Jeudi : {{ page.jeudi }}</p>
+<p>Vendredi : {{ page.vendredi }}</p>
+<p>Samedi : {{ page.samedi }}</p>
+<p>Dimanche : {{ page.dimanche }}</p>
+
+<h2>Réseaux sociaux</h2>
+
+<p>
+    <a href="{{ page.instagram }}" target="_blank">
+        Instagram
+    </a>
+</p>
+
+<p>
+    <a href="{{ page.linkedin }}" target="_blank">
+        LinkedIn
+    </a>
+</p>
+
+<p>
+    <a href="{{ page.planity }}" target="_blank">
+        Planity
+    </a>
+</p>
 
 {% endblock content %}
